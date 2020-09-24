@@ -7,19 +7,22 @@ public class SnakeLadder{
 		int NO_PLAY=0,LADDER=1,SNAKE=2;
 
 		//computation
-		int face_number=(int)Math.floor(Math.random()*10)%6 + 1;
-		int check=(int)Math.floor(Math.random()*10)%3;
-		switch(check)
+		while(INITIAL_POSITION<100)
 		{
-			case 0:
-				break;
-			case 1:
-				INITIAL_POSITION+=face_number;
-				break;
-			case 2:
-				if(INITIAL_POSITION>=face_number)
-				INITIAL_POSITION-=face_number;
-				break;
+			int face_number=(int)Math.floor(Math.random()*10)%6 + 1;
+			int check=(int)Math.floor(Math.random()*10)%3;
+			switch(check)
+			{
+				case 0:
+					break;
+				case 1:
+					INITIAL_POSITION+=face_number;
+					break;
+				case 2:
+					if(INITIAL_POSITION>=face_number)
+					INITIAL_POSITION-=face_number;
+					break;
+			}
 		}
 		System.out.println(INITIAL_POSITION);
 	}
