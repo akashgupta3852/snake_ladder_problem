@@ -1,5 +1,5 @@
 public class SnakeLadder{
 	public static void main(String[] args){
-		System.out.println("Welcome to Snake Ladder Problem");
+		System.out.println("Welcome to Snake Ladder Problem Statement");
 	}
 }
