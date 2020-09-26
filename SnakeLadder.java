@@ -1,10 +1,10 @@
 public class SnakeLadder{
+	public final static int NO_PLAY=0,LADDER=1,SNAKE=2;
 	public static void main(String[] args){
 		System.out.println("Welcome to Snake Ladder Problem Statement");
 
 		//constants
 		int INITIAL_POSITION=0, NO_OF_PLAYERS=1;
-		int NO_PLAY=0,LADDER=1,SNAKE=2;
 
 		//computation
 		while(INITIAL_POSITION<100)
