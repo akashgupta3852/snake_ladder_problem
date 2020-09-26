@@ -1,10 +1,10 @@
 public class SnakeLadder{
+	public final static int NO_PLAY=0,LADDER=1,SNAKE=2;
 	public static void main(String[] args){
 		System.out.println("Welcome to Snake Ladder Problem Statement");
 
 		//constants
 		int INITIAL_POSITION=0, NO_OF_PLAYERS=1;
-		int NO_PLAY=0,LADDER=1,SNAKE=2;
 		int count=0;
 
 		//computation
@@ -15,13 +15,13 @@ public class SnakeLadder{
 			int check=(int)Math.floor(Math.random()*10)%3;
 			switch(check)
 			{
-				case 0:
+				case NO_PLAY:
 					break;
-				case 1:
-					if(INITIAL_POSITION+face_number<=100)
+
+				case LADDER:
 					INITIAL_POSITION+=face_number;
 					break;
-				case 2:
+				case SNAKE:
 					if(INITIAL_POSITION>=face_number)
 					INITIAL_POSITION-=face_number;
 					break;
