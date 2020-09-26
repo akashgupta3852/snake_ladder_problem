@@ -17,6 +17,7 @@ public class SnakeLadder{
 					break;
 
 				case LADDER:
+					if(INITIAL_POSITION+face_number<=100)
 					INITIAL_POSITION+=face_number;
 					break;
 				case SNAKE:
