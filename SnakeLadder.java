@@ -11,6 +11,7 @@ public class SnakeLadder{
 		//computation
 		while(INITIAL_POSITION<100)
 		{
+			count++;
 			int face_number=(int)Math.floor(Math.random()*10)%6 + 1;
 			int check=(int)Math.floor(Math.random()*10)%3;
 			switch(check)
@@ -39,7 +40,8 @@ public class SnakeLadder{
 			if(player==2)
 			{	
 				if(INITIAL_POSITION==100)
-				{
+				{	
+					System.out.println(count);
 					System.out.println("Player 2");
 					break;
 				}
@@ -52,6 +54,7 @@ public class SnakeLadder{
 			{
 				if(INITIAL_POSITION==100)
 				{	
+					System.out.println(count);
 					System.out.println("Player 1");
 					break;
 				}
