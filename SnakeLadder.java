@@ -13,13 +13,13 @@ public class SnakeLadder{
 			int check=(int)Math.floor(Math.random()*10)%3;
 			switch(check)
 			{
-				case 0:
+				case NO_PLAY:
 					break;
-				case 1:
-					if(INITIAL_POSITION+face_number<=100)
+
+				case LADDER:
 					INITIAL_POSITION+=face_number;
 					break;
-				case 2:
+				case SNAKE:
 					if(INITIAL_POSITION>=face_number)
 					INITIAL_POSITION-=face_number;
 					break;
